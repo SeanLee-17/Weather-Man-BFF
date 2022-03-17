@@ -36,10 +36,14 @@
     margin: 15px;
 }
 
+.cards-container {
+    display: flex;
+    width: 100%;
+}
 
 .cards-wrapper {    
     display: inline-block;
-    width: 17%;
+    flex: 1;
     margin: 5px;
     
 }

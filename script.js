@@ -239,6 +239,7 @@ function futureWeather () {
             var future5Icon = "fa-solid fa-cloud-fog"
           }
 
+          $("#forecast1").text(" ")
           var cardContainer1 = $("<div>")
             .attr("class", "card")
             .attr("style","border: 10px solid pink")
@@ -262,6 +263,7 @@ function futureWeather () {
           $(cardContainer1).append(cardBody1);
           $("#forecast1").append(cardContainer1);
 
+          $("#forecast2").text(" ")
           var cardContainer2 = $("<div>")
             .attr("class", "card")
             .attr("style","border: 10px solid pink")
@@ -285,7 +287,8 @@ function futureWeather () {
           $(cardBody2).append(cardTitle2).append(cardIcon2, cardText2, cardsText2, cardssText2);
           $(cardContainer2).append(cardBody2);
           $("#forecast2").append(cardContainer2);
-      
+
+          $("#forecast3").text(" ")
           var cardContainer3 = $("<div>")
             .attr("class", "card")
             .attr("style","border: 10px solid pink")
@@ -310,6 +313,7 @@ function futureWeather () {
           $(cardContainer3).append(cardBody3);
           $("#forecast3").append(cardContainer3);
 
+          $("#forecast4").text(" ")
           var cardContainer4 = $("<div>")
             .attr("class", "card")
             .attr("style","border: 10px solid pink")
@@ -334,6 +338,7 @@ function futureWeather () {
           $(cardContainer4).append(cardBody4);
           $("#forecast4").append(cardContainer4);
 
+          $("#forecast5").text(" ")
           var cardContainer5 = $("<div>")
             .attr("class", "card")
             .attr("style","border: 10px solid pink")
