@@ -2,7 +2,44 @@
     background-image: linear-gradient(pink, lightblue);
     width: 100%;
     height: 80px;
-    color: white;
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
     margin: 5px 10px 10px 10px;
+    text-align: center;
+}
+
+#mainCard {
+    background-image: linear-gradient(lightblue,pink);
+    width: 66%;
+    float: right;
+    display: block;
+}
+
+#box-style {
+    background-image: linear-gradient(lightblue,pink);
+    width: 33%;
+    margin-bottom: 32px;
+    display: block;
+    height: 387.195px;
+}
+
+#search-style {
+    height: 259.195px;
+}
+
+#card-style {
+    color: lightblue;
+}
+
+#searchBtn {
+    background-color: pink;
+    margin: 15px;
+}
+
+
+.cards-wrapper {    
+    display: inline-block;
+    width: 17%;
+    margin: 5px;
+    
 }

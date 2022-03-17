@@ -15,27 +15,42 @@
     <header id="header">
         <h1>Weather Forecast</h1>
     </header>
-    <div class="jumbotron">
-        <h1 class="display-4"></h1>
-        <p class="lead"></p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 
+
+    <div class="jumbotron" id="mainCard">
+        <h1 class="display-4" id="cityName">Enter the name of a city</h1>
+        <p class="lead" id="temp">Temp: </p>
+        <p class="lead" id="humid">Humidity: </p>
+        <p class="lead" id="wind">Wind Speed: </p>
+        <p class="lead" id="uvi">UVI: </p>
     </div>
 
-    <div class="container">
-        <div id="box-style" class="col-md-6 offset-md-3 m-6 p-5">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 id="card-style" class="card-title text-primary">Search Any City</h5>
-                    <input id="userInput" class="form-control m-1 p-1" type="text" placeholder="Search a city">
-                    <a id="searchBtn" href="#" class="btn btn-info">Search</a>
-                </div>
+
+    <div id="box-style" class="p-5">
+        <div class="card text-center" id="search-style">
+            <div class="card-body">
+                <h5 id="card-style" class="card-title">Search Any City</h5>
+                <input id="userInput" class="form-control m-1 p-1" type="text" placeholder="Search a city">
+                <a id="searchBtn" href="#" class="btn btn-info">Search</a>
             </div>
         </div>
     </div>
 
 
+    <div class="cards-wrapper" id="forecast1"></div>
+
+    <div class="cards-wrapper" id="forecast2"></div>
+
+    <div class="cards-wrapper" id="forecast3"></div>
+
+    <div class="cards-wrapper" id="forecast4"></div>
+
+    <div class="cards-wrapper" id="forecast5"></div>
+
+    <script src="https://kit.fontawesome.com/b0c42d3d08.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
