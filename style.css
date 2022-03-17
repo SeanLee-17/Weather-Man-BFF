@@ -4,8 +4,9 @@
     height: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    margin: 5px 10px 10px 10px;
+    margin: 10px;
     text-align: center;
+    border-radius: 25px;
 }
 
 #mainCard {
@@ -13,6 +14,8 @@
     width: 66%;
     float: right;
     display: block;
+    border-radius: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #box-style {
@@ -21,6 +24,8 @@
     margin-bottom: 32px;
     display: block;
     height: 387.195px;
+    border-radius: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #search-style {
@@ -45,5 +50,6 @@
     display: inline-block;
     flex: 1;
     margin: 5px;
-    
+    border-radius: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

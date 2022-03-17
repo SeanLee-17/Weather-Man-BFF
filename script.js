@@ -7,9 +7,7 @@ var humidText = $("#humid")
 var windText = $("#wind")
 var uviText = $("#uvi")
 var pastCities = []
-
-
-
+var pastCitiesContainer = $(".city-buttons")
 
 function cityWeather () {
   var weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput.val() + "&appid=" + apiKey;
@@ -59,6 +57,16 @@ function cityWeather () {
             humidText.text("Humidity: " + humid)
             windText.text("Wind Speed: " + wind + " mph")
             uviText.text("UVI: " + uvi)
+
+            console.log(uvi)
+
+            if (uvi < 3) {
+              uviText.attr("style","color: white; background-color: green; width: 85px");
+            } else if (3 < uvi <6) {
+              uviText.attr("style","color: white; background-color: yellow; width: 85px")
+            } else {
+              uviText.attr("style","color: white; background-color: red; width: 85px")
+            }
           })
       });
 }
@@ -366,10 +374,30 @@ function futureWeather () {
   });
 }
 
-homeBtn.on("click", function(event) {
+function pastCityInfo() {
+  pastCities = JSON.parse(localStorage.getItem("cityNames"))
 
-  cityWeather();
-  futureWeather();
+  var city = localStorage.getItem("city")
+  pastCities.push(city)
+  localStorage.setItem("cityNames", JSON.stringify(pastCities))
+
+  if (city !== "") {
+    pastCitiesContainer.textContent = "";
+    for (var i = 0; i < pastCities.length; i++) {
+      let cityButton = $('button')
+      cityButton.textContent = pastCities[i]
+      cityButton.attr("cityNames", pastCities[i])
+      pastCitiesContainer.append(cityButton)
+    }
+  }
+
+}
+
+homeBtn.on("click", function(event) {
   event.preventDefault();
   event.stopPropagation();
+  cityWeather();
+  futureWeather();
+  pastCityInfo();
+
 })
