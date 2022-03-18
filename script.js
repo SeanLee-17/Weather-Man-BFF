@@ -61,11 +61,11 @@ function cityWeather () {
             console.log(uvi)
 
             if (uvi < 3) {
-              uviText.attr("style","color: white; background-color: green; width: 85px");
+              uviText.attr("style","color: white; background-color: green; width: 100px");
             } else if (3 < uvi <6) {
-              uviText.attr("style","color: white; background-color: yellow; width: 85px")
+              uviText.attr("style","color: white; background-color: yellow; width: 100px")
             } else {
-              uviText.attr("style","color: white; background-color: red; width: 85px")
+              uviText.attr("style","color: white; background-color: red; width: 100px")
             }
           })
       });
@@ -263,7 +263,7 @@ function futureWeather () {
             .text("Temp: " + Future1Temp + " F")
           var cardsText1 = $("<p>")
             .attr("class", "card-text text-black-50")
-            .text("Humdity: " + Future1Humidity)
+            .text("Humidity: " + Future1Humidity)
           var cardssText1 = $("<p>")
             .attr("class", "card-text text-black-50")
             .text("Wind Speed: " + Future1Wind + " mph")
@@ -287,7 +287,7 @@ function futureWeather () {
             .text("Temp: " + Future2Temp + " F")
           var cardsText2 = $("<p>")
             .attr("class", "card-text text-black-50")
-            .text("Humdity: " + Future2Humidity)
+            .text("Humidity: " + Future2Humidity)
           var cardssText2 = $("<p>")
             .attr("class", "card-text text-black-50")
             .text("Wind Speed: " + Future2Wind + " mph")
@@ -312,7 +312,7 @@ function futureWeather () {
             .text("Temp: " + Future3Temp + " F")
           var cardsText3 = $("<p>")
             .attr("class", "card-text text-black-50")
-            .text("Humdity: " + Future3Humidity)
+            .text("Humidity: " + Future3Humidity)
           var cardssText3 = $("<p>")
             .attr("class", "card-text text-black-50")
             .text("Wind Speed: " + Future3Wind + " mph")
@@ -337,7 +337,7 @@ function futureWeather () {
             .text("Temp: " + Future4Temp + " F")
           var cardsText4 = $("<p>")
             .attr("class", "card-text text-black-50")
-            .text("Humdity: " + Future4Humidity)
+            .text("Humidity: " + Future4Humidity)
           var cardssText4 = $("<p>")
             .attr("class", "card-text text-black-50")
             .text("Wind Speed: " + Future4Wind + " mph")
@@ -362,7 +362,7 @@ function futureWeather () {
             .text("Temp: " + Future5Temp + " F")
           var cardsText5 = $("<p>")
             .attr("class", "card-text text-black-50")
-            .text("Humdity: " + Future5Humidity)
+            .text("Humidity: " + Future5Humidity)
           var cardssText5 = $("<p>")
             .attr("class", "card-text text-black-50")
             .text("Wind Speed: " + Future5Wind + " mph")
